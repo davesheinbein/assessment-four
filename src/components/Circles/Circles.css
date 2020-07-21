@@ -1,0 +1,34 @@
+.circlesContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    border: 4px solid greenyellow;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+.circlesContainer div {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 5px solid green;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+
+.circlesContainer div.selected {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+    background-color: white;
+    border: 5px solid purple;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+

@@ -1,0 +1,29 @@
+.circleIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+    height: 100%;
+    margin: 0px;
+    padding: 1em;
+    border: 4px solid purple;
+    border-radius: 5px;
+}
+
+.circleIndex button {
+    margin: 1em 0px;
+    padding: .5em 1em;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.circleIndex button.selected {
+    background-color: white;
+    color: limegreen;
+    border: none;
+    cursor: default;
+}

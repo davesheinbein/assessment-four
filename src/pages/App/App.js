@@ -1,40 +1,41 @@
 import React, { Component } from 'react';
 import './App.css';
-import circleServices from '../../services/circleServices'
-import Circles from '../../components/Circles'
+// import circleServices from '../../services/circleServices'
+import Circles from '../../components/Circles/Circles'
+import CircleIndex from '../../components/CircleIndex/CircleIndex'
 
 class App extends Component {
   /*--- State ---*/
   constructor() {
     super();
     this.state = {
-      cicles: [],
+      circleIndex: [],
     };
   }
 
-  getInitialState() {
-    return {
-
-    };
-  }
 
   /*--- Handle Methods ---*/
-  handleClickUpdate = () => {
-
+  handleClick = (event) => {
+    console.log(event.target.id);
+    this.setState({
+      circleIndex: parseInt(event.target.id)
+    })
   }
 
   /*--- Lifecycle Methods ---*/
-  // async componentDidMount = () => {
-    // const circles = await circleServices.index();
-    // this.setState({ cicles });
-  // }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">Assessment 4</header>
-        <div>
-          <Circles />
+        <header className="App-header">Unit 4 Final Assessment</header>
+        <div className='container'>
+          <CircleIndex
+            handleClick={this.handleClick}
+            circleIndex={this.state.circleIndex}
+          />
+          <Circles
+            circleIndex={this.state.circleIndex}
+          />
         </div>
       </div>
     );
