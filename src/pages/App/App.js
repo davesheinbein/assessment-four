@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 // import circleServices from '../../services/circleServices'
 import Circles from '../../components/Circles/Circles'
-import CircleIndex from '../../components/CircleIndex/CircleIndex'
+import CircleSelector from '../../components/CircleSelector/CircleSelector'
 
 class App extends Component {
   /*--- State ---*/
@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">Unit 4 Final Assessment</header>
         <div className='container'>
-          <CircleIndex
+          <CircleSelector
             handleClick={this.handleClick}
             circleIndex={this.state.circleIndex}
           />

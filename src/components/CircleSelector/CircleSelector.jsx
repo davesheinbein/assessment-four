@@ -1,9 +1,9 @@
 import React from 'react';
-import './CircleIndex.css'
+import './CircleSelector.css'
 
-function CircleIndex(props) {
+function CircleSelector(props) {
     return (
-        <div className='circleIndex'>
+        <div className='circleSelector'>
             <button
                 id='0'
                 onClick={props.handleClick}
@@ -35,4 +35,4 @@ function CircleIndex(props) {
         </div>
     )
 }
-export default CircleIndex;
+export default CircleSelector;

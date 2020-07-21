@@ -1,4 +1,4 @@
-.circleIndex {
+.circleSelector {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
     border-radius: 5px;
 }
 
-.circleIndex button {
+.circleSelector button {
     margin: 1em 0px;
     padding: .5em 1em;
     background-color: purple;
@@ -21,7 +21,11 @@
     cursor: pointer;
 }
 
-.circleIndex button.selected {
+.circleSelector button:hover {
+    background-color: limegreen;
+}
+
+.circleSelector button.selected {
     background-color: white;
     color: limegreen;
     border: none;
