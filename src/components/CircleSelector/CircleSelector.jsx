@@ -3,7 +3,7 @@ import './CircleSelector.css'
 
 function CircleSelector(props) {
     return (
-        <div className='circleSelector'>
+        <div className='CircleSelector'>
             <button
                 id='0'
                 onClick={props.handleClick}

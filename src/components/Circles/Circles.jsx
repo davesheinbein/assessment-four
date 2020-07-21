@@ -3,7 +3,7 @@ import './Circles.css'
 
 function Circles(props) {
     return (
-        <div className='circlesContainer'>
+        <div className='Circles'>
             <div
                 className={props.circleIndex === 0 ? 'selected' : null}
             >
